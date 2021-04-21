@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/courier-web/static/css/main.b637e931.chunk.css",
+    "main.js": "/courier-web/static/js/main.a7f6da08.chunk.js",
+    "main.js.map": "/courier-web/static/js/main.a7f6da08.chunk.js.map",
+    "runtime-main.js": "/courier-web/static/js/runtime-main.613b4d98.js",
+    "runtime-main.js.map": "/courier-web/static/js/runtime-main.613b4d98.js.map",
+    "static/css/2.c51d807b.chunk.css": "/courier-web/static/css/2.c51d807b.chunk.css",
+    "static/js/2.52e16f9a.chunk.js": "/courier-web/static/js/2.52e16f9a.chunk.js",
+    "static/js/2.52e16f9a.chunk.js.map": "/courier-web/static/js/2.52e16f9a.chunk.js.map",
+    "index.html": "/courier-web/index.html",
+    "static/css/2.c51d807b.chunk.css.map": "/courier-web/static/css/2.c51d807b.chunk.css.map",
+    "static/css/main.b637e931.chunk.css.map": "/courier-web/static/css/main.b637e931.chunk.css.map",
+    "static/js/2.52e16f9a.chunk.js.LICENSE.txt": "/courier-web/static/js/2.52e16f9a.chunk.js.LICENSE.txt",
+    "static/media/courier.937de6a5.svg": "/courier-web/static/media/courier.937de6a5.svg",
+    "static/media/login.7a5d44de.svg": "/courier-web/static/media/login.7a5d44de.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.613b4d98.js",
+    "static/css/2.c51d807b.chunk.css",
+    "static/js/2.52e16f9a.chunk.js",
+    "static/css/main.b637e931.chunk.css",
+    "static/js/main.a7f6da08.chunk.js"
+  ]
+}
