@@ -54,7 +54,7 @@ function CreateDestinatario() {
 
   const onSubmit = (data) => {
     axios
-      .post('http://localhost:3000/api/destinatario', {
+      .post('https://carloscourierapi.herokuapp.com/api/destinatario', {
         nombre: data.nombre,
         RNC: data.rnc,
         telefono: data.telefono,

@@ -54,7 +54,7 @@ function CreateRemitente() {
 
   const onSubmit = (data) => {
     axios
-      .post('http://localhost:3000/api/remitente', {
+      .post('https://carloscourierapi.herokuapp.com/api/remitente', {
         nombre: data.nombre,
         RNC: data.rnc,
         telefono: data.telefono,

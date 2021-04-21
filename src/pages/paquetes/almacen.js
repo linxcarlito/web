@@ -44,13 +44,13 @@ const Paquetes = () => {
 
   const fetchData = React.useCallback(async () => {
     await axios
-      .get('http://localhost:3000/api/paquetes/tipo/Almacen')
+      .get('https://carloscourierapi.herokuapp.com/api/paquetes/tipo/Almacen')
       .then((response) => setData(response.data))
       .catch((err) => console.log(err));
   }, []);
 
   const onDelete = async (id) => {
-    await axios.delete(`http://localhost:3000/api/paquetes/${id}`);
+    await axios.delete(`https://carloscourierapi.herokuapp.com/api/paquetes/${id}`);
     setReload(true);
   };
 

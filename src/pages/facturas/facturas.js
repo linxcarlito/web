@@ -44,7 +44,7 @@ const Facturas = () => {
 
   const fetchData = React.useCallback(async () => {
     await axios
-      .get('http://localhost:3000/api/factura')
+      .get('https://carloscourierapi.herokuapp.com/api/factura')
       .then((response) => setData(response.data))
       .catch((err) => console.log(err));
   }, []);
@@ -55,7 +55,7 @@ const Facturas = () => {
 
   const cancelFactura = async (id) => {
     await axios
-      .put(`http://localhost:3000/api/factura/${id}`)
+      .put(`https://carloscourierapi.herokuapp.com/api/factura/${id}`)
       .then(() => fetchData());
   };
 

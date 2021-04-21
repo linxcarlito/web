@@ -53,7 +53,7 @@ function EditDestinatario() {
 
   const fetchDestinatario = React.useCallback(async () => {
     await axios
-      .get(`http://localhost:3000/api/destinatario/${id}`)
+      .get(`https://carloscourierapi.herokuapp.com/api/destinatario/${id}`)
       .then((response) => {
         setDestinatario(response.data);
         setLoading(true);
@@ -66,7 +66,7 @@ function EditDestinatario() {
   }, [fetchDestinatario]);
   const onSubmit = (data) => {
     axios
-      .put(`http://localhost:3000/api/destinatario/${id}`, {
+      .put(`https://carloscourierapi.herokuapp.com/api/destinatario/${id}`, {
         nombre: data.nombre,
         RNC: data.rnc,
         telefono: data.telefono,

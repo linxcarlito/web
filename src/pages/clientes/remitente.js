@@ -43,14 +43,14 @@ const Remitente = () => {
   const [data, setData] = React.useState([]);
   const fetchData = React.useCallback(async () => {
     await axios
-      .get('http://localhost:3000/api/remitente')
+      .get('https://carloscourierapi.herokuapp.com/api/remitente')
       .then((response) => setData(response.data))
       .catch((err) => console.log(err));
   }, []);
 
   const deleteCliente = async (id) => {
     await axios
-      .delete(`http://localhost:3000/api/remitente/${id}`)
+      .delete(`https://carloscourierapi.herokuapp.com/api/remitente/${id}`)
       .then(() => fetchData());
   };
 

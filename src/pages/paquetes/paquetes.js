@@ -44,7 +44,7 @@ const Paquetes = () => {
 
   const fetchData = React.useCallback(async () => {
     await axios
-      .get('http://localhost:3000/api/paquetes')
+      .get('https://carloscourierapi.herokuapp.com/api/paquetes')
       .then((response) => setData(response.data))
       .catch((err) => console.log(err));
   }, []);
@@ -55,7 +55,7 @@ const Paquetes = () => {
 
   const onDelete = async (id) => {
     await axios
-      .delete(`http://localhost:3000/api/paquetes/${id}`)
+      .delete(`https://carloscourierapi.herokuapp.com/api/paquetes/${id}`)
       .then(() => fetchData());
   };
 

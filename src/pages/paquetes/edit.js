@@ -96,7 +96,7 @@ function EditarPaquete() {
   };
   const onSubmit = (data) => {
     axios
-      .put(`http://localhost:3000/api/paquetes/${id}`, {
+      .put(`https://carloscourierapi.herokuapp.com/api/paquetes/${id}`, {
         nombre: data.nombre,
         descripcion: data.descripcion,
         peso: data.peso,
@@ -114,7 +114,7 @@ function EditarPaquete() {
 
   const fetchPaquete = React.useCallback(async () => {
     await axios
-      .get(`http://localhost:3000/api/paquetes/${id}`)
+      .get(`https://carloscourierapi.herokuapp.com/api/paquetes/${id}`)
       .then((response) => {
         setPaquete(response.data);
         setLoading(true);

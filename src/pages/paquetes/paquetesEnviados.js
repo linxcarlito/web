@@ -42,7 +42,7 @@ const PaquetesEnviados = () => {
 
   const fetchData = React.useCallback(async () => {
     await axios
-      .get('http://localhost:3000/api/paquetes/tipo/Enviado')
+      .get('https://carloscourierapi.herokuapp.com/api/paquetes/tipo/Enviado')
       .then((response) => setData(response.data))
       .catch((err) => console.log(err));
   }, []);

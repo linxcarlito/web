@@ -22,7 +22,7 @@ function Home() {
   const [data, setData] = React.useState();
   const fetchData = React.useCallback(async () => {
     await axios
-      .get('http://localhost:3000/api/paquetes/contador')
+      .get('https://carloscourierapi.herokuapp.com/api/paquetes/contador')
       .then((response) => setData(response.data));
   }, []);
 

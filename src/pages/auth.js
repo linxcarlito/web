@@ -43,7 +43,7 @@ const Auth = () => {
 
   const onLogin = (data) => {
     axios
-      .post('http://localhost:3000/api/auth/login', data)
+      .post('https://carloscourierapi.herokuapp.com/api/auth/login', data)
       .then(() => {
         setCookie('sesion', true);
         history.push('/home');
@@ -53,7 +53,7 @@ const Auth = () => {
 
   const onRegister = (data) => {
     axios
-      .post('http://localhost:3000/api/auth/register', data)
+      .post('https://carloscourierapi.herokuapp.com/api/auth/register', data)
       .then(() => {
         setCookie('sesion', true);
         history.push('/home');

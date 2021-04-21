@@ -53,7 +53,7 @@ function EditRemitente() {
 
   const fetchRemitente = React.useCallback(async () => {
     await axios
-      .get(`http://localhost:3000/api/remitente/${id}`)
+      .get(`https://carloscourierapi.herokuapp.com/api/remitente/${id}`)
       .then((response) => {
         setRemitente(response.data);
         setLoading(true);
@@ -66,7 +66,7 @@ function EditRemitente() {
   }, [fetchRemitente]);
   const onSubmit = (data) => {
     axios
-      .put(`http://localhost:3000/api/remitente/${id}`, {
+      .put(`https://carloscourierapi.herokuapp.com/api/remitente/${id}`, {
         nombre: data.nombre,
         RNC: data.rnc,
         telefono: data.telefono,
