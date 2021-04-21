@@ -93,7 +93,7 @@ function PaqueteCreate() {
   };
 
   const facturar = async (data) => {
-    await axios.post('hhttps://carloscourierapi.herokuapp.com/api/factura', {
+    await axios.post('https://carloscourierapi.herokuapp.com/api/factura', {
       destinatarioNombre: data.nombre,
       total: data.costoEnvio,
       descripcion: data.descripcion,
@@ -104,7 +104,7 @@ function PaqueteCreate() {
 
   const onSubmit = (data) => {
     axios
-      .post('hhttps://carloscourierapi.herokuapp.com/api/paquetes', {
+      .post('https://carloscourierapi.herokuapp.com/api/paquetes', {
         nombre: data.nombre,
         descripcion: data.descripcion,
         peso: data.peso,
